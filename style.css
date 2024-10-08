@@ -44,3 +44,18 @@ body{
     font-weight: bold;
     margin-bottom: 8px;
 }
+
+.fixed-footer {
+    position: fixed; /* Make footer fixed */
+    bottom: 0;/* Position it at the bottom */
+    left: 0;
+    width: 100%; /* Full width */
+    color: #2b2b2b; /* Light text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add some padding */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.fixed-footer p {
+    margin: 0; /* Remove default paragraph margin */
+}
