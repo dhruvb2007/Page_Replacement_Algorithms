@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Replacement Algorithm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="w-full px-12 py-4 flex justify-between items-center">
+        <div>
+            <h1 class="text-2xl">Page Replacement Algorithms</h1>
+        </div>
+        <div class="mr-4">
+            <select class="border border-black bg-[#f6f6f6] px-8 py-2 rounded-xl" id="algorithm-dropdown">
+                <option value="FIFO" selected>FIFO</option>
+                <option value="LRU">LRU</option>
+            </select>
+        </div>
+    </nav>
+
+    <main class="w-full flex items-center justify-center">
+        <form id="input-form" class="">
+            <div class="w-full mt-[20vh]">
+                <h1>Enter Number of Page References</h1>
+                <input class="bg-[#f6f6f6] border border-black rounded-xl py-1 w-[80vw] mt-2 px-4 tracking-wider"
+                    type="text" placeholder="(Separate numbers by ',') e.g. 1,1,3,4,5,6,5,6,8,9,1,2,3,6" id="page-references">
+            </div>
+            <div class="w-full mt-4 ">
+                <h1>Enter Number of Page Frames</h1>
+                <input class="bg-[#f6f6f6] border border-black rounded-xl py-1 w-[80vw] mt-2 px-4" type="number"
+                    placeholder="e.g. 4" id="page-frames">
+            </div>
+            <button type="button" class="bg-[#f6f6f6] mt-6 border border-black px-8 py-2 rounded-xl" id="calculate-btn">Calculate</button>
+        </form>
+
+        <div id="result" class="hidden mt-12 w-full px-12">
+            <h1 id="result-title" class="text-xl font-bold"></h1>
+            <div class="w-full flex justify-center">
+                <div id="visualization" class="mt-6 flex"></div>
+            </div>
+            <div class="total-page-fault" id="total-page-fault"></div>
+            <button class="bg-[#f6f6f6] mt-6 border border-black px-8 py-2 rounded-xl" onclick="resetForm()">Go Back</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

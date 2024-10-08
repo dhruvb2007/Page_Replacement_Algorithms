@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: "Inter", serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.frame {
+    border: 1px solid #616161;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 0; /* Vertical spacing */
+    background-color: #f6f6f6;
+    font-weight: bold;
+}
+
+.status {
+    text-align: center;
+    font-size: 14px;
+    color: #474747;
+}
+
+.column {
+    display: flex;
+    flex-direction: column-reverse; 
+    justify-content: flex-start; 
+    margin: 0 10px; 
+}
+
+.total-page-fault {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
